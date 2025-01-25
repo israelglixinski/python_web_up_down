@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload e Download</title>
+</head>
+<body>
+    <h1>Upload e Download de Arquivos</h1>
+    
+    <!-- Formulário de Upload -->
+    <form action="/playground1/upload" method="POST" enctype="multipart/form-data">
+        <label for="file">Selecione um arquivo:</label>
+        <input type="file" name="file" id="file" required>
+        <button type="submit">Fazer Upload</button>
+    </form>
+    
+    <h2>Arquivos Disponíveis para Download</h2>
+    <ul>
+        {% for file in files %}
+        <li>
+            <a href="/playground1/download/{{ file }}">{{ file }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
