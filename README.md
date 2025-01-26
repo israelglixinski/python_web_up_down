@@ -18,4 +18,5 @@ Este é um projeto simples desenvolvido com Flask e Python para permitir o uploa
 
    ```bash
    git clone https://github.com/israelglixinski/python_web_up_down.git
+   (or git clone https://gitlab.com/israel_glixinski/python_web_up_down.git)
    cd python_web_up_down
